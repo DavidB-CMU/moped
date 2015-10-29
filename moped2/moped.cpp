@@ -120,8 +120,11 @@ class MopedROS
         #pragma omp parallel for
         for (int i=0; i < (int)fileNames.size(); i++)
         {
+            clog << "Loading model: " << (fileNames[i]).c_str() << std::endl;
+
             sXML XMLModel;
             XMLModel.fromFile(fileNames[i]);
+
             #pragma omp critical(addModel)
             moped.addModel(XMLModel);
         }
@@ -140,17 +143,21 @@ class MopedROS
 
         double d1, d2, d3, d4;
 
+        clog << "Using camera intrinsic parameters: " << std::endl;
+
         n.param("KK_fx", d1, 100.);
         n.param("KK_fy", d2, 100.);
         n.param("KK_cx", d3, 320.);
         n.param("KK_cy", d4, 240.);
         intrinsicLinearCalibration.init(d1, d2, d3, d4);
+        clog << "fx = " << d1 << "   fy = " << d2 << "   cx = " << d3 << "   cy = " << d4 << std::endl;
 
         n.param("kc_k1", d1, 1e-12);
         n.param("kc_k2", d2, 1e-12);
         n.param("kc_p1", d3, 1e-12);
         n.param("kc_p2", d4, 1e-12);
         intrinsicNonlinearCalibration.init(d1, d2, d3, d4);
+        clog << "k1 = " << d1 << "   k2 = " << d2 << "   p1 = " << d3 << "   p2 = " << d4 << std::endl;
 
         map<string,string> config = moped.getConfig();
 
