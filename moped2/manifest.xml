@@ -2,10 +2,12 @@
   <description brief="moped2">
   Fast pose estimation and object recognition system from a single image, in C++. Original code from Alvaro Collet, magically optimized and speeded up by Manuel Martinez.
   </description>
-  <author>Alvaro Collet (alvaro.collet@gmail.com), Manuel Martinez (salutte@gmail.com), Siddhartha Srinivasa (siddhartha.srinivasa@intel.com)</author>
+
+  <author>Alvaro Collet, Manuel Martinez, Siddhartha Srinivasa</author>
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
-  <url>http://personalrobotics.ri.cmu.edu/</url>
+
+  <url>http://www.personalrobotics.ri.cmu.edu</url>
 
   <depend package="roscpp"/>
   <depend package="sensor_msgs"/>
@@ -13,9 +15,6 @@
   <depend package="opencv2"/>
   <depend package="cv_bridge"/>
   <depend package="image_transport"/>
-
-  <versioncontrol type="svn"
-	  url="https://svn.personalrobotics.ri.cmu.edu/repos/pr/public/moped2"/>
 
   <rosdep name="glew"/>
   <rosdep name="glew-dev"/>
