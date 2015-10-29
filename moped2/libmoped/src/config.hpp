@@ -46,8 +46,8 @@
 #include <STATUS_DISPLAY.hpp>
 #include <GLOBAL_DISPLAY.hpp>
 
-#define USE_GPU 1
-//#define USE_CPU 1
+//#define USE_GPU 1
+#define USE_CPU 1
 
 namespace MopedNS
 {
