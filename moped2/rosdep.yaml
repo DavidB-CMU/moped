@@ -1,3 +1,4 @@
+# rosdep only uses this file in ROS Electric
 glew:
   ubuntu: libglew1.5
 glew-dev:
