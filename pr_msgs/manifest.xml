@@ -1,0 +1,17 @@
+<package>
+  <description brief="pr_msgs">
+(deprecated) This package includes custom ROS messages and services
+used by the MOPED framework.
+  </description>
+
+  <author>Siddhartha Srinivasa</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+
+  <url>http://www.personalrobotics.ri.cmu.edu</url>
+
+  <depend package="std_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="sensor_msgs"/>
+  <depend package="actionlib_msgs"/>
+</package>
