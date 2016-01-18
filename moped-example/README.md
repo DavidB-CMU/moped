@@ -18,7 +18,7 @@ $ roscore
 
 In a separate terminal:  
 `
-$ roslaunch moped-example moped-example.launch
+$ roslaunch moped_example moped_example.launch
 `
 
 It will take a short time to load the program, then you should see some output like:  

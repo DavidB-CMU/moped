@@ -8,7 +8,7 @@
     <!-- Internal parameters of MOPED -->
     <param name="input_image_topic_name" type="str" value="Image" />
     <param name="output_object_list_topic_name" type="str" value="camera_poses" />
-    <param name="models_path" type="str" value="$(find moped_models)/models" />
+    <param name="models_path" type="str" value="$(find moped_models)/example_models" />
   </node>
 
 </launch>

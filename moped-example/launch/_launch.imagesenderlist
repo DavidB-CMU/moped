@@ -17,7 +17,7 @@
 
   <node machine="imagesender" pkg="imagesender" 
 	type="imagesenderlist.py" name="imagesenderlist" 
-	respawn="true" args="$(find moped-example)/test images_list.txt" 
+	respawn="true" args="$(find moped_example)/test images_list.txt" 
         cwd="node">
   </node>
 
