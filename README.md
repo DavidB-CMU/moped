@@ -95,7 +95,7 @@ Run 'doxygen mainpage.dox' in the `moped2` directory
 
 ### How to install MOPED with ROS Fuerte:
 
-This tutorial will demonstrate how to install and test `moped2`.
+This tutorial will explain how to install and test `moped2`.
 
 The following computer setup was used:  
  - Intel quad-core i7 CPU
@@ -103,7 +103,7 @@ The following computer setup was used:
  - Ubuntu 11.10 Oneiric Ocelot
  - ROS Fuerte
  - rosbuild (not catkin)
- - pthon 2.7.2
+ - python 2.7.2
  - cmake 2.8.5
 
 #### Install the required dependencies:
