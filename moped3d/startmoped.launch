@@ -1,6 +1,5 @@
 <launch>
  
-  <param name="display" type="int" value="0"/>
   <param name="mode" value="MODE_1024x768_MONO"/>
   
   <param name="framerate" type="double" value="15"/>
