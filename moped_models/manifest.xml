@@ -1,0 +1,14 @@
+<package>
+  <description brief="moped_models">
+Sample models for MOPED in a rosbuild package.
+  </description>
+
+  <author>Alvaro Collet, David Butterworth</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+
+  <url>http://www.personalrobotics.ri.cmu.edu</url>
+
+</package>
+
+
