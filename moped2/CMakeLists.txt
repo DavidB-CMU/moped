@@ -48,7 +48,6 @@ add_custom_command(TARGET moped2 PRE_BUILD COMMAND ./find_opencv2.sh WORKING_DIR
 
 
 
-rosbuild_add_executable(moped2_test moped_test.cpp)
 
 rosbuild_add_link_flags(moped2_test "-Wl,--start-group")
 rosbuild_add_compile_flags(moped2_test "-O3 -Wall -march=native -mfpmath=sse -fopenmp")
