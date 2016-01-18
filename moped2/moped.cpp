@@ -201,6 +201,13 @@ class MopedROS
             mopedImage->height = gs->height;
             mopedImage->data.resize(gs->width * gs->height);
 
+            // Make sure image width equals the widthStep, as it should
+            // for a monochrome image
+            if (gs->widthStep != gs->width)
+            {
+                clog << "Error: it looks the input image is 3-channel RGB, MOPED only supports Mono single-channel images." << endl;
+            }
+
             for (int y = 0; y < gs->height; y++)
             {
                 memcpy(&mopedImage->data[y*gs->width], &gs->imageData[y*gs->widthStep], gs->width);
