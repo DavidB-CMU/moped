@@ -84,7 +84,7 @@ List of nodes:
 
 \subsection moped2 moped2 
 
-does object recognition from images. See the related package moped-example for
+does object recognition from images. See the related package moped_example for
 details on how to launch moped using rosrun or roslaunch.
 
 
@@ -152,10 +152,10 @@ $ ./make
 
 \section commandline Other tools
 
-An additional package called moped-example is included with MOPED. This offers
+An additional package called moped_example is included with MOPED. This offers
 an example on how to use MOPED with other ROS nodes. In particular, the package
 \b imagesender \endb sends images through the network from a list
-of files. You can download imagesender and moped-example from the same
+of files. You can download imagesender and moped_example from the same
 repository that you downloaded MOPED from.
 
 \section modeling MOPED Modeling
@@ -164,7 +164,7 @@ within moped2. There is a tutorial called 'modeling.dox' that you should follow.
 
 \subsubsection Usage
 \verbatim
-$ ./roslaunch moped-example.launch
+$ ./roslaunch moped_example.launch
 \endverbatim
 
 

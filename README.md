@@ -29,7 +29,7 @@ A node to publish images from a dataset.
 
 **meanshiftpy**  
 
-**moped-example**  
+**moped_example**  
 A self-contained program to test MOPED using a sequence of image frames.
 
 **moped-modeling-py**  
@@ -154,7 +154,7 @@ You should end up with the following structure:
 `~/ros_workspace/imagesender`  
 `~/ros_workspace/moped2`  
 `~/ros_workspace/moped_models`  
-`~/ros_workspace/moped-example`  
+`~/ros_workspace/moped_example`  
 `~/ros_workspace/pr_msgs`  
 
 Don't forget to source the appropriate ROS `setup.bash` file  
@@ -217,7 +217,7 @@ If working correctly, imagesender will continuously publish a test image.
 You can view the ROS Msg:  
 `$ rostopic echo /Image`
 
-**moped-example:**
+**moped_example:**
 
 There is nothing to compile.  
 
@@ -231,7 +231,7 @@ This program publishes a sequence of image frames as ROS messages and MOPED will
 Start ROS:  
 `$ roscore`  
 In a separate terminal:  
-`$ roslaunch moped-example moped-example.launch`  
+`$ roslaunch moped_example moped_example.launch`  
 
 It will take a short time to load MOPED, then you should see some output like this:  
 ```
@@ -275,7 +275,7 @@ Re-compile the moped2 package:
 `$ rosmake moped2`  
 
 Launch the MOPED example again:  
-`$ roslaunch moped-example moped-example.launch`  
+`$ roslaunch moped_example moped_example.launch`  
 
 If everything is working correctly, you will see the object poses printed to the terminal and a pop-up window displaying the features detected by SIFT_GPU.
 
