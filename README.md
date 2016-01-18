@@ -39,6 +39,9 @@ Original MOPED framework using a single, monocular 2D camera.
 
 **moped3d**  
 
+**moped_models**
+Sample object models for use with the example program.
+
 **pr_msgs**  
 Custom ROS messages and services used by the MOPED framework.
 
