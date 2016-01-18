@@ -262,6 +262,14 @@ class MopedROS
                      //out.convex_hull_y.push_back( (int) pt[1] );
                 //}
 
+                // Get the bounding box (of the matched features)
+                out.bounding_box_min.x = object->model->boundingBox[0][0];
+                out.bounding_box_min.y = object->model->boundingBox[0][1];
+                out.bounding_box_min.z = object->model->boundingBox[0][2];
+                out.bounding_box_max.x = object->model->boundingBox[1][0];
+                out.bounding_box_max.y = object->model->boundingBox[1][1];
+                out.bounding_box_max.z = object->model->boundingBox[1][2];
+
                 outList.object_list.push_back(out);
             }
 
@@ -274,6 +282,9 @@ class MopedROS
             foreach( object, objects )
             {
                 clog << " Found " << object->model->name << " at " << object->pose << " with score " << object->score << endl;
+
+                // Print x,y,z co-ordinates of the bounding box
+                //clog << "Bounding box: " << object->model->boundingBox[0][0] << "," << object->model->boundingBox[0][1] << "," << object->model->boundingBox[0][2] << " to " << object->model->boundingBox[1][0] << "," << object->model->boundingBox[1][1] << "," << object->model->boundingBox[1][2] << endl;
             }
 
         }
