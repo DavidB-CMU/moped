@@ -227,6 +227,7 @@ You can view the ROS Msg:
 There is nothing to compile.  
 
 **moped_models:**
+
 There is nothing to compile.  
 
 **moped_object_pose_publisher:**
