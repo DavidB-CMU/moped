@@ -165,7 +165,7 @@ class Options(object):
 
         self.reproj_th = 2.5
         self.min_matched_views = 3
-        self.descriptors = {'SIFT': 'sift'} # Descriptor name and module name
+        self.descriptors = {'SIFT': 'siftpy'} # Descriptor name and module name
         self.mask_suffix = '*_mask.png'
         
         # If there is an options file, it will overwrite the defaults 
