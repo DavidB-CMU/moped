@@ -24,7 +24,7 @@ from scipy.cluster import vq
 
 # Import our custom modules
 try:
-    import roslib; roslib.load_manifest('moped-modeling')
+    import roslib; roslib.load_manifest('moped_modeling')
 except ImportError:
     print 'Could not import paths from ROS, please make sure the \
             following modules are available in your PYTHONPATH: \
@@ -90,7 +90,7 @@ class Config(object):
 
     # ------------------------------------------------------------------------ #
     def load(self, config_file):
-        """ Load a Moped-modeling YAML config file.
+        """ Load a moped_modeling YAML config file.
         
             Usage: Success = Config.load(config_file = 'config.yaml')
 
@@ -117,7 +117,7 @@ class Config(object):
 
     # ------------------------------------------------------------------------ #
     def dump(self, config_file = 'config.yaml'):
-        """ Export a Moped-modeling Config object into a YAML file.
+        """ Export a moped_modeling Config object into a YAML file.
         
             Usage: opts.dump(config_file = 'config.yaml')
 
@@ -148,7 +148,7 @@ class Options(object):
 
     descriptors = None
     """ Dictionary containing the descriptors names and modules to use for
-        Moped-modeling. See descriptor_template.py for details."""
+        moped_modeling. See descriptor_template.py for details."""
 
     mask_suffix = None 
     """ Pattern that masks must match in order for us to find them. """
@@ -174,7 +174,7 @@ class Options(object):
 
     # ------------------------------------------------------------------------ #
     def load(self, yaml_file):
-        """ Load a Moped-modeling YAML options file.
+        """ Load a moped_modeling YAML options file.
         
             Usage: Success = opts.load(yaml_file = 'options.yaml')
 
@@ -196,7 +196,7 @@ class Options(object):
 
     # ------------------------------------------------------------------------ #
     def dump(self, yaml_file):
-        """ Export a Moped-modeling Options object into a YAML file.
+        """ Export a moped_modeling Options object into a YAML file.
         
             Usage: opts.dump(yaml_file = 'options.yaml')
 

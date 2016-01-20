@@ -17,7 +17,7 @@ import sys
 
 # Import our custom modules
 try:
-    import roslib; roslib.load_manifest('moped-modeling')
+    import roslib; roslib.load_manifest('moped_modeling')
 except ImportError:
     print 'Could not import paths from ROS, please make sure the \
             following modules are available in your PYTHONPATH: \
