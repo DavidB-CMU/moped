@@ -52,6 +52,12 @@ Custom ROS messages and services used by the MOPED framework.
 
 &nbsp;
 
+### Documentation & installation instructions:
+
+See the README files in the `moped2` and `moped3d` packages.
+
+&nbsp;
+
 ### Related publications:
 
 #### moped2:
@@ -87,12 +93,6 @@ IEEE International Conference on Robotics and Automation (ICRA 2009), May, 2009.
 David Fouhey, Alvaro Collet Romea, Martial Hebert , and Siddhartha Srinivasa  
 2nd Workshop on Consumer Depth Cameras for Computer Vision in conjunction with ECCV 2012, October, 2012.  
 [Details](https://www.ri.cmu.edu/publication_view.html?pub_id=7252&menu_code=0307) | [PDF](https://www.ri.cmu.edu/pub_files/2012/10/cdc4cv.pdf) (3MB)
-
-&nbsp;
-
-### Documentation & installation instructions:
-
-See the README files in the `moped2` and `moped3d` packages.
 
 &nbsp;
 
