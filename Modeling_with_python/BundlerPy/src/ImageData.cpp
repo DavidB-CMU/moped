@@ -832,16 +832,11 @@ void ImageData::LoadKeys(bool descriptor, bool undistort) {
         
         /* Now make the image center the origin */
         for (int k = 0; k < (int) kps.size(); k++) {
-<<<<<<< .mine
-            kps[k].m_x -= 0.5 * GetWidth();
-            kps[k].m_y -= 0.5 * GetHeight();
-=======
             // ALVARO: Changed this to revert to Bundler v0.3
             // kps[k].m_x -= 0.5 * (GetWidth() - 1);
             // kps[k].m_y -= 0.5 * (GetHeight() - 1);
             kps[k].m_x -= 0.5 * GetWidth();
             kps[k].m_y -= 0.5 * GetHeight();
->>>>>>> .r11053
         }
         
         m_keys = kps;
