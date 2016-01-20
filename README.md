@@ -346,5 +346,75 @@ Display the final pose of each detected object
 Display a window containing views of various steps of the pipeline and a graph of the processing load at each step  
 ![GLOBAL_DISPLAY](https://raw.github.com/DavidB-CMU/moped/master/screenshots/moped2/GLOBAL_DISPLAY_1.png)
 
+&nbsp;
+
+### Using your own camera with MOPED
+
+You can use any webcam or machine vision camera with MOPED. Note that MOPED requires that the input image is single-channel monochrome due to the way it uses the image widthStep value. For example, a 640x480 monochrome image has a widthStep of 640, whereas a 640x480 3-channel RGB image has a widthStep of 1920.
+
+Launch the camera driver using its provided launch file.
+
+Launch MOPED using the `moped2.launch` file. You will need to edit the parameter `"input_image_topic_name"` to be the monochrome image published by your camera.
+
+&nbsp;
+
+### Using MOPED with the ASUS Xtion Pro RGBD sensor
+
+This sensor is a good choice because whilst MOPED detects objects using only the 2D camera, the object's pose and bounding box can be projected onto the calibrated 3D PointCloud to verify that MOPED is working correctly.
+
+Install dependencies:  
+`$ sudo aptitude install ros-fuerte-openni-camera ros-fuerte-openni-launch`
+
+You should check that you can launch the ROS OpenNI driver without any errors. You may need to modify the OpenNI configuration depending on if you're using a Microsoft Kinect or ASUS Xtion.
+
+Also, you may want to calibration the intrinsic and extrinsic parameters for the camera.
+
+Start ROS:  
+`$ roscore`
+
+Then in a separate terminal, Use the provided launch file to start the ASUS Xtion and publish camera images:  
+`$ roslaunch moped2 asus_xtion.launch`
+
+In another terminal, start MOPED:  
+`$ roslaunch moped2 moped2_openni.launch`
+
+It will take a short time to load MOPED, then you should see some output like this:  
+> Loading model: /ros_workspace/moped_models/example_models/poptarts_raspberry.moped.xml
+> Loading model: /ros_workspace/moped_models/example_models/ricepilaf.moped.xml
+> Loading model: /ros_workspace/moped_models/example_models/juicebox_back.moped.xml
+> Loading model: /home/dbworth/ros_workspace/moped_models/example_models/fuze_bottle.moped.xml
+> 
+> Using camera intrinsic parameters: 
+> fx = 531.978   fy = 531.265   cx = 305.222   cy = 240.309
+> k1 = 0.081497   k2 = -0.19513   p1 = 0.002   p2 = -0.000458
+> 
+> CLUSTER:0.00183929
+> FILTER:3.0316e-05
+> FILTER2:1.83e-05
+> MATCH_SIFT:0.133542
+> POSE:0.0013778
+> POSE2:1.483e-05
+> SIFT:0.309078
+> UNDISTORTED_IMAGE:0.0727872
+> 
+>  Found 0 objects
+
+If you point the camera at a known object, MOPED should detect the object:  
+> Found 1 objects
+> Found fuze_bottle at [-0.194405 -0.0306901 0.908696] [0.578992 0.448512 -0.410362 0.54333] with score 47.2164
+> Bounding box: -0.018272,-0.061981,-0.0898 to 0.023968,0.06178,0.092636
+
+In another terminal, start a node to publish an axis and bounding box for each detected object:  
+`$ roslaunch moped_object_pose_publisher run.launch`
+
+In another terminal, start Rviz:  
+`$ rosrun rviz rviz`
+
+Set the Fixed Frame to the camera e.g. "/camera_link".  
+Add a MarkerArray listening to the topic "visualization_marker_array".  
+Add a PointCloud2 listening to the topic "/camera/depth_registered/points".  
+
+&nbsp;
+
 
 
