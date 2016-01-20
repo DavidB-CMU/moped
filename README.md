@@ -379,30 +379,30 @@ In another terminal, start MOPED:
 `$ roslaunch moped2 moped2_openni.launch`
 
 It will take a short time to load MOPED, then you should see some output like this:  
-> Loading model: /ros_workspace/moped_models/example_models/poptarts_raspberry.moped.xml
-> Loading model: /ros_workspace/moped_models/example_models/ricepilaf.moped.xml
-> Loading model: /ros_workspace/moped_models/example_models/juicebox_back.moped.xml
-> Loading model: /home/dbworth/ros_workspace/moped_models/example_models/fuze_bottle.moped.xml
-> 
-> Using camera intrinsic parameters: 
-> fx = 531.978   fy = 531.265   cx = 305.222   cy = 240.309
-> k1 = 0.081497   k2 = -0.19513   p1 = 0.002   p2 = -0.000458
-> 
-> CLUSTER:0.00183929
-> FILTER:3.0316e-05
-> FILTER2:1.83e-05
-> MATCH_SIFT:0.133542
-> POSE:0.0013778
-> POSE2:1.483e-05
-> SIFT:0.309078
-> UNDISTORTED_IMAGE:0.0727872
-> 
->  Found 0 objects
+> Loading model: /ros_workspace/moped_models/example_models/poptarts_raspberry.moped.xml  
+> Loading model: /ros_workspace/moped_models/example_models/ricepilaf.moped.xml  
+> Loading model: /ros_workspace/moped_models/example_models/juicebox_back.moped.xml  
+> Loading model: /home/dbworth/ros_workspace/moped_models/example_models/fuze_bottle.moped.xml  
+>  
+> Using camera intrinsic parameters:  
+> fx = 531.978   fy = 531.265   cx = 305.222   cy = 240.309  
+> k1 = 0.081497   k2 = -0.19513   p1 = 0.002   p2 = -0.000458  
+>  
+> CLUSTER:0.00183929  
+> FILTER:3.0316e-05  
+> FILTER2:1.83e-05  
+> MATCH_SIFT:0.133542  
+> POSE:0.0013778  
+> POSE2:1.483e-05  
+> SIFT:0.309078  
+> UNDISTORTED_IMAGE:0.0727872 gi  
+>  
+>  Found 0 objects  
 
 If you point the camera at a known object, MOPED should detect the object:  
-> Found 1 objects
-> Found fuze_bottle at [-0.194405 -0.0306901 0.908696] [0.578992 0.448512 -0.410362 0.54333] with score 47.2164
-> Bounding box: -0.018272,-0.061981,-0.0898 to 0.023968,0.06178,0.092636
+> Found 1 objects  
+> Found fuze_bottle at [-0.194405 -0.0306901 0.908696] [0.578992 0.448512 -0.410362 0.54333] with score 47.2164  
+> Bounding box: -0.018272,-0.061981,-0.0898 to 0.023968,0.06178,0.092636  
 
 In another terminal, start a node to publish an axis and bounding box for each detected object:  
 `$ roslaunch moped_object_pose_publisher run.launch`
