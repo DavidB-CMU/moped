@@ -24,7 +24,8 @@ except ImportError:
             meanshift, tf_format, Camera'  
 
 import MopedModeling
-from Camera import Camera
+import utils
+from utils import Camera
 
 # --------------------------------------------------------------------------- #
 # read options from yaml file and process file

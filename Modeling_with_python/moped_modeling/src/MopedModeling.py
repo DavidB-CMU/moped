@@ -37,7 +37,7 @@ import meanshift  # We use k-means now
 import tf_format
 import MaskReader
 import utils
-from Camera import Camera
+#from Camera import Camera
 
 ################################################################################
 #
