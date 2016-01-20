@@ -42,6 +42,9 @@ Original MOPED framework using a single, monocular 2D camera.
 **moped_models**
 Sample object models for use with the example program.
 
+**moped_object_pose_publisher**
+A node to publish Rviz Markers for the detected objects. 
+
 **pr_msgs**  
 Custom ROS messages and services used by the MOPED framework.
 
