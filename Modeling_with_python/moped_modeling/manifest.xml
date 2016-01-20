@@ -14,5 +14,6 @@ software must be GPL by extension.
   <depend package="opencv2"/>
   <depend package="meanshiftpy"/>
   <depend package="BundlerPy"/>
+  <depend package="tf_format"/>
 </package>
 
