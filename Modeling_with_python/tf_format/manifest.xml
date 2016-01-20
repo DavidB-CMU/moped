@@ -1,0 +1,18 @@
+<package>
+  <description brief="tf_format">
+Module that transforms RPY, quaternions, rotation matrices and rodrigues vectors (any to any), with optional inversion.
+  </description>
+  <author>Alvaro Collet</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url></url>
+
+  <depend package="rospy"/>
+  <depend package="opencv2"/>
+
+  <export>
+    <python path="${prefix}"/>
+  </export>
+</package>
+
+
