@@ -158,12 +158,14 @@ You should end up with the following structure:
 `~/ros_workspace/moped2`  
 `~/ros_workspace/moped_models`  
 `~/ros_workspace/moped_example`  
+`~/ros_workspace/moped_models`  
+`~/ros_workspace/moped_object_pose_publisher`  
 `~/ros_workspace/pr_msgs`  
 
 Don't forget to source the appropriate ROS `setup.bash` file  
 and add the above package directories to your `ROS_PACKAGE_PATH`:  
 `$ source /opt/ros/fuerte/setup.bash`  
-`$ export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/ros_workspace/pr_msgs`  
+`$ export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/ros_workspace/`  
 
 #### Compile the packages:
 
