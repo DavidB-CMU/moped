@@ -1,0 +1,13 @@
+<launch>
+
+  <node pkg="moped_object_pose_publisher" type="node" name="moped_object_pose_publisher" respawn="false" output="screen">
+
+    <!-- The name of the camera TF frame.                       -->
+    <!-- The pose of the detected objects must be published in  -->
+    <!-- the same frame as the images that are input to MOPED.  -->
+    <param name="camera_frame" type="str" value="/camera_rgb_optical_frame" />
+
+  </node>
+
+</launch>
+

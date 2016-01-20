@@ -1,0 +1,18 @@
+<package>
+  <description brief="moped_object_pose_publisher">
+This node reads the information of objects detected by MOPED
+and publishes their position and bounding box as Rviz Markers.
+  </description>
+  <author>dbworth</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/moped_object_pose_publisher</url>
+
+  <depend package="roscpp"/>
+  <depend package="moped2"/>
+  <depend package="pr_msgs"/>  
+  <depend package="eigen_conversions"/>
+
+</package>
+
+
