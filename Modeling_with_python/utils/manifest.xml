@@ -1,0 +1,15 @@
+<package>
+  <description brief="utils">
+Assorted utilities for python.
+  </description>
+  <author>Alvaro Collet </author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url></url>
+
+  <export>
+    <python path="${prefix}"/>
+  </export>
+</package>
+
+

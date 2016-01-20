@@ -1,0 +1,6 @@
+cam_file: kinect.yaml
+names: {bag: .bag, depth: _depth.jpg, img: _img.jpg, mask: _mask.jpg, output: _JS.pickle.zip,
+  output_img: _segm.jpg, summary: _summary.pickle}
+paths: {bag: bags, depth: depth, img: images, mask: masks, output: output, output_img: output,
+  segm: segm, summary: summaries}
+pkg_name: rgbd_objects
