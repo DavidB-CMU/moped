@@ -1,0 +1,36 @@
+<launch>
+
+  <!-- Example launch file to start MOPED                          -->
+  <!-- You should start a separate node for your camera to publish -->
+  <!-- images, which must be monochrome single-channel.            -->
+
+  <!-- Camera parameters, these are also used by MOPED: -->
+
+  <param name="KK_fx" type="double" value="800"/>
+  <param name="KK_fy" type="double" value="800"/>
+
+  <param name="KK_cx" type="double" value="512"/>
+  <param name="KK_cy" type="double" value="680"/>
+
+  <param name="kc_k1" type="double" value="0"/>
+  <param name="kc_k2" type="double" value="0"/>
+  <param name="kc_p1" type="double" value="0"/>
+  <param name="kc_p2" type="double" value="0"/>
+
+  <node pkg="moped2" type="moped2" name="moped2" respawn="false" output="screen">
+
+    <!-- Internal parameters of MOPED: -->
+
+    <!-- Topic name for input images -->
+    <param name="input_image_topic_name" type="str" value="Image" />
+
+    <!-- Topic name to output the detected objects -->
+    <param name="output_object_list_topic_name" type="str" value="camera_poses" />
+
+    <!-- Path to xml object models -->
+    <param name="models_path" type="str" value="$(find moped_models)/example_models" />
+
+  </node>
+
+</launch>
+

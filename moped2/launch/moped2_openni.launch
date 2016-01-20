@@ -1,0 +1,32 @@
+<launch>
+
+  <!-- Camera parameters, these are also used by MOPED: -->
+
+  <param name="KK_fx" type="double" value="531.977502"/>
+  <param name="KK_fy" type="double" value="531.264600"/>
+
+  <param name="KK_cx" type="double" value="305.221730"/>
+  <param name="KK_cy" type="double" value="240.308995"/>
+
+  <param name="kc_k1" type="double" value="0.081497"/>
+  <param name="kc_k2" type="double" value="-0.195130"/>
+  <param name="kc_p1" type="double" value="0.002000"/>
+  <param name="kc_p2" type="double" value="-0.000458"/>
+
+  <node pkg="moped2" type="moped2" name="moped2" respawn="false" output="screen">
+
+    <!-- Internal parameters of MOPED: -->
+
+    <!-- Topic name for input images -->
+    <param name="input_image_topic_name" type="str" value="/camera/rgb/image_mono" />
+
+    <!-- Topic name to output the detected objects -->
+    <param name="output_object_list_topic_name" type="str" value="camera_poses" />
+
+    <!-- Path to xml object models -->
+    <param name="models_path" type="str" value="$(find moped_models)/example_models" />
+
+  </node>
+
+</launch>
+
