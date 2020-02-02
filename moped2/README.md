@@ -269,27 +269,27 @@ MOPED allows you to enable various graphical display windows for debugging each 
 
 **FEAT_DISPLAY**  
 Display the detected image features (SIFT or SURF)  
-![FEAT_DISPLAY](https://raw.github.com/DavidB-CMU/moped/master/screenshots/moped2/FEAT_DISPLAY_1.png)
+![FEAT_DISPLAY](https://raw.githubusercontent.com/DavidB-CMU/moped/master/moped2/screenshots/01_FEAT_DISPLAY.png)
 
 **MATCH_DISPLAY**  
 Display the matched feature points  
-![MATCH_DISPLAY](https://raw.github.com/DavidB-CMU/moped/master/screenshots/moped2/MATCH_DISPLAY_1.png)
+![MATCH_DISPLAY](https://raw.githubusercontent.com/DavidB-CMU/moped/master/moped2/screenshots/02_MATCH_DISPLAY.png)
 
 **CLUSTER_DISPLAY**  
 Display the detected cluster regions  
-![CLUSTER_DISPLAY](https://raw.github.com/DavidB-CMU/moped/master/screenshots/moped2/CLUSTER_DISPLAY_1.png)
+![CLUSTER_DISPLAY](https://raw.githubusercontent.com/DavidB-CMU/moped/master/moped2/screenshots/03_CLUSTER_DISPLAY.png)
 
 **POSE_DISPLAY**  
 Display the multiple pose hypotheses  
-![POSE_DISPLAY](https://raw.github.com/DavidB-CMU/moped/master/screenshots/moped2/POSE_DISPLAY_1.png)
+![POSE_DISPLAY](https://raw.githubusercontent.com/DavidB-CMU/moped/master/moped2/screenshots/04_POSE_DISPLAY.png)
 
 **POSE2_DISPLAY**  
 Display the final pose of each detected object  
-![POSE2_DISPLAY](https://raw.github.com/DavidB-CMU/moped/master/screenshots/moped2/POSE2_DISPLAY_1.png)
+![POSE2_DISPLAY](https://raw.githubusercontent.com/DavidB-CMU/moped/master/moped2/screenshots/05_POSE2_DISPLAY.png)
 
 **GLOBAL_DISPLAY**  
 Display a window containing views of various steps of the pipeline and a graph of the processing load at each step  
-![GLOBAL_DISPLAY](https://raw.github.com/DavidB-CMU/moped/master/screenshots/moped2/GLOBAL_DISPLAY_1.png)
+![GLOBAL_DISPLAY](https://raw.githubusercontent.com/DavidB-CMU/moped/master/moped2/screenshots/06_GLOBAL_DISPLAY.png)
 
 &nbsp;
 
