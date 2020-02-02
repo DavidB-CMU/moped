@@ -2,6 +2,8 @@
 
 This is a framework for the detection and pose estimation of multiple objects using a monocular camera.
 
+<a href="https://raw.githubusercontent.com/DavidB-CMU/moped/master/moped2/screenshots/09_detected_objects_bounding_boxes.png"><img width="400" align="right" src="https://raw.githubusercontent.com/DavidB-CMU/moped/master/moped2/screenshots/09_detected_objects_bounding_boxes.png"></a>
+
 **Authors:**  
 Alvaro Collet  
 Manuel Martinez  
@@ -13,7 +15,8 @@ David Butterworth
 &nbsp;
 
 **Update Oct 2015:**  
-MOPED has been verified working with ROS Fuerte on Ubuntu 11.10 Oneiric Ocelot.  
+MOPED has been verified working with ROS Fuerte  
+on Ubuntu 11.10 Oneiric Ocelot.  
 You can read the installation guide below.
 
 &nbsp;
